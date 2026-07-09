@@ -1,0 +1,63 @@
+<html>
+<head>
+  <title>My Projects</title>
+  <style>
+    body { font-family: Arial; margin: 35px; text-align: center; }
+    nav { background-color: #333; padding: 10px; margin-bottom: 20px; border-radius: 8px; }
+    nav a { color: white; margin: 10px; text-decoration: none; }
+    h1 { color: blue; }
+    
+    /* THIS IS THE MAGIC - FLEXBOX */
+    .projects-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .project-card {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer { 
+      background-color: #333; 
+      color: white; 
+      padding: 10px; 
+      margin-top: 40px; 
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Bio</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>MY PROJECTS</h1>
+  
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>About Me Page</h3>
+      <p>my first responsive website with flexbox and mobile layout.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Login Form</h3>
+      <p>styled form with hover button and clean UI.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Portfolio Site</h3>
+      <p>this multi-page site you're viewing right now.</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Godwin | Built with HTML / CSS
+  </footer>
+</body>
+</html>
